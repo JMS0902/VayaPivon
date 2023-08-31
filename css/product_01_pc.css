@@ -1,0 +1,1079 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  font-size: 10pt;
+  color: #333;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:link, a:active, a:visited{
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(150, 150, 150);
+  text-decoration: none;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  position: relative;
+  clear: both;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* 헤더 */
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto;
+  z-index: 100;
+  font-family: 'Montserrat';
+  transition: all 0.1s;
+}
+
+  header:hover {
+    transition: all 0.2s;
+    background-color: rgb(255, 255, 255);
+  }
+
+  /* 메뉴 1 */
+  .menu_01_cap {
+    position: relative;
+    float: left;
+    width: 110px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  /* 메뉴 2 */
+  .menu_02_cap {
+    position: relative;
+    float: left;
+    width: 110px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.1s;
+  }
+
+    .menu_02_cap:hover {
+      width: 110px;
+      height: 380px;
+      transition: all 0.3s;
+      background-color: rgb(255, 255, 255);
+    }
+
+  /* 메뉴 3 */
+  .menu_03_cap {
+    position: relative;
+    float: left;
+    width: 110px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.1s;
+  }
+
+    .menu_03_cap:hover {
+      width: 110px;
+      height: 260px;
+      transition: all 0.3s;
+      background-color: rgb(255, 255, 255);
+    }
+
+  /* 메뉴 4 */
+  .menu_04_cap {
+    position: relative;
+    float: left;
+    width: 110px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.1s;
+  }
+
+    .menu_04_cap:hover {
+      width: 110px;
+      height: 320px;
+      transition: all 0.3s;
+      background-color: rgb(255, 255, 255);
+    }
+
+  
+  header #menu_down {
+    position: relative;
+    clear: both;
+    width: 110px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1rem;
+  }
+
+ 
+  /* 좌측 컨텐츠 */
+  .left_side_box {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    z-index: 5;
+    line-height: 2em;
+  }
+
+    /* 장바구니 */
+    #cart {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 60px;
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    /* 메인로고 */
+    #main_logo {
+      position: absolute;
+      left: 0px;
+      width: 100%;
+      bottom: 23%;
+      font-size: 2.7rem;
+      transform: rotate(-90deg);
+      line-height: 100%;
+      text-align: center;
+      font-family: 'Baskervville', serif;
+    }
+
+
+  /* 우측 컨텐츠 */
+  .right_side_box {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 10%;
+    height: 100%;
+    z-index: 5;
+    line-height: 3em;
+  }
+
+    #menu_more {
+      position: relative;
+      clear: both;
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    #search {
+      position: relative;
+      clear: both;
+      width: 100%;
+      height: 50px;
+      text-align: center;
+    }
+
+    #insta {
+      position: relative;
+      clear: both;
+      width: 100%;
+      height: 50px;
+      text-align: center;
+    }
+
+    /* 퀵메뉴 */
+    #quick_menu {
+      position: absolute;
+      bottom: 130px;
+      width: 100%;
+      text-align: center;
+      z-index: 5;
+    }
+  
+      #quick_menu #quick_top {
+        display: block;
+        margin: auto;
+        max-width: 50px;
+        height: 40px;
+      }
+
+      #quick_menu #quick_bottom {
+        display: block;
+        margin: auto;
+        max-width: 50px;
+        height: 40px;
+      }
+  
+  /* 메인 상품 이미지, 설명 */
+  .product_all {
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 120px;
+    /* background-color: #f0f0f0; */
+  }
+
+  #product_con_all {
+    position: relative;
+    clear: both;
+    width: 1440px;
+    height: 18900px;
+    margin: 0 auto;
+  }
+
+    /* 상품 이미지 묶음 */
+    #product_wrap {
+      position: relative;
+      float: left;
+      width: 950px;
+      height: 18800px;
+    }
+
+      /* 상품 이미지 */
+      #product_img {
+        position: relative;
+        float: left;
+        width: 950px;
+        height: 620px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+      }
+
+        /* 상품 이미지 */
+        #pro_img_left {
+          position: relative;
+          float: left;
+          width: 800px;
+          height: 620px;
+        }
+
+        /* 상품 썸네일 이미지 */
+        #pro_img_right {
+            position: relative;
+            float: left;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            width: 120px;
+            height: 540px;
+            margin-left: 15px;
+        }
+
+          #pro_img_each {
+            position: relative;
+            clear: both;
+            width: 120px;
+            height: 120px;
+          }
+          
+
+      /* 상품 텍스트 */
+      #pro_text_all {
+        position: relative;
+        float: right;
+        width: 450px;
+        height: 18680px;
+      }
+      
+      #product_text {
+        position: sticky;
+        left: 990px;
+        top: 0;
+      }
+
+        #pro_text_01 {
+          position: relative;
+          clear: both;
+          width: 450px;
+          height: 175px;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: space-between;
+          font-family: 'Montserrat';
+        }
+
+          #pro_name {
+            position: relative;
+            clear: both;
+            width: 450px;
+            height: 55px;
+            font-size: 1.3rem;
+            font-weight: 500;
+          }
+
+          #pro_price {
+            position: relative;
+            clear: both;
+            width: 450px;
+            height: 30px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #3b3b3b;
+          }
+
+          #pro_list {
+            position: relative;
+            clear: both;
+            width: 450px;
+            height: 90px;
+          }
+
+          #pro_list > ul {
+            position: relative;
+            clear: both;
+            width: 450px;
+            height: 95px;
+          }
+
+            #pro_list > ul > li {
+              position: relative;
+              width: 450px;
+              height: 22.5px;
+              line-height: 22.5px;
+              font-size: 1rem;
+            }
+
+        #pro_text_02 {
+          position: relative;
+          clear: both;
+          width: 450px;
+          height: 115px;
+          line-height: 18px;
+          margin-top: 20px;
+          font-size: 0.8rem;
+          font-family: 'Pretendard-Regular';
+        }
+
+          #pro_text_02_1 {
+            position: relative;
+            clear: both;
+            width: 450px;
+            height: 25px;
+            line-height: 20px;
+            font-size: 0.5rem;
+            font-weight: 500;
+            margin-top: 30px;
+            color: #5e5e5e;
+            font-family: 'Pretendard-Regular';
+          }
+
+        #pro_text_03 {
+          position: relative;
+          clear: both;
+          width: 450px;
+          height: 175px;
+          margin-top: 70px;
+          border-top: 1px solid #333;
+          border-bottom: 1px solid #333;
+        }
+
+          #pro_text_03_top {
+            position: relative;
+            clear: both;
+            display: flex;
+            flex-flow: row nowrap;
+            width: 440px;
+            height: 65px;
+            padding: 10px 5px;
+          }
+
+            /* 상품이름 */
+            #pro_text_03_01 {
+              position: relative;
+              float: left;
+              width: 200px;
+              height: 65px;
+              line-height: 21px;
+              font-size: 1rem;
+              font-weight: 500;
+              font-family: 'Montserrat';
+            }
+
+            /* 상품 수량 */
+            #pro_text_03_02 {
+              position: relative;
+              float: left;
+              width: 70px;
+              height: 65px;
+            }
+
+            /* 수량 버튼 */
+            #pro_quantity {
+              position: relative;
+              clear: both;
+              width: 60px;
+              height: 45px;
+              padding-top: 20px;
+              padding-left: 10px;
+            }
+
+              #quantity {
+                position: relative;
+                float: left;
+                width: 25px;
+                height: 24px;
+                border: 1px solid #ccc;
+                border-radius: 3px 0 0 3px;
+                outline: none;
+                background-color: rgba(255, 255, 255, 0);
+              }
+            
+            #btn_all {
+              position: relative;
+              float: left;
+              width: 22px;
+              height: 26px;
+              font-size: 0;
+              background-color: #5e5e5e;
+            }
+
+            #btn_all > a {
+              position: relative;
+              clear: both;
+              width: 22px;
+              height: 13px;
+              font-size: 0;
+            }
+
+        /* 상품금액 */
+        #pro_text_03_03 {
+          position: relative;
+          float: left;
+          width: 170px;
+          height: 65px;
+          text-align: right;
+          line-height: 65px;
+          font-weight: 500;
+          font-family: 'Montserrat';
+        }
+        
+
+      /* 총 합계금액 */
+      #pro_text_03_bottom {
+        position: relative;
+        clear: both;
+        width: 440px;
+        height: 20px;
+        line-height: 10px;
+        padding: 10px 5px;
+        margin-top: 50px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        font-family: 'Montserrat';
+      }
+
+
+      /* 상품 구매, 장바구니, 위시 버튼 */      
+      #pro_btn {
+        position: relative;
+        clear: both;
+        width: 450px;
+        height: 90px;
+        margin-top: 15px;
+        font-family: 'Montserrat';
+      }
+
+        /* 구매하기 버튼 */
+        #pro_buy_btn {
+          position: relative;
+          clear: both;
+          width: 448px;
+          height: 38px;
+          line-height: 40px;
+          color: #f1f1f1;
+          text-align: center;
+          font-size: 0.8rem;
+          font-weight: 500;
+          background-color: #141414;
+          border: 1px solid #141414;
+          border-radius: 2px;
+          transition: all 0.3s;
+        }
+
+          #pro_buy_btn:hover {
+            width: 448px;
+            height: 38px;
+            color: #141414;
+            background-color: #fff;
+            border: 1px solid #5a5a5a;
+            transition: all 0.3s;
+          }
+
+        /* 장바구니, 위시 담기 */
+        #pro_add_all {
+          position: relative;
+          clear: both;
+          width: 450px;
+          height: 40px;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          text-align: center;
+          margin-top: 10px;
+        }
+
+          #pro_cart_btn {
+            position: relative;
+            float: left;
+            width: 218px;
+            height: 38px;
+            line-height: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            background-color: #fff;
+            border-radius: 2px;
+            color: #525252;
+            border: 1px solid #a3a3a3;
+            transition: all 0.3s;
+          }
+
+            #pro_cart_btn:hover {
+              background-color: #e7e7e7;
+              transition: all 0.3s;
+            }
+
+          #pro_wish_btn {
+            position: relative;
+            float: left;
+            width: 218px;
+            height: 38px;
+            line-height: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            background-color: #fff;
+            border-radius: 2px;
+            color: #525252;
+            border: 1px solid #a3a3a3;
+            transition: all 0.3s;
+          }
+
+            #pro_wish_btn:hover {
+              background-color: #e7e7e7;
+              transition: all 0.3s;
+            }
+
+
+      /* 상세페이지 메뉴바 */
+      #detail_menu {
+        position: relative;
+        clear: both;
+        width: 948px;
+        height: 58px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin: 0 auto;
+        /* background-color: #f3f3f3; */
+      } 
+    
+        #detail_menu > ul {
+          position: relative;
+          clear: both;
+          width: 900px;
+          height: 60px;
+          display: flex;
+          flex-flow: row nowrap;
+          padding-left: 0px;
+          border-radius: 10px;
+          margin: 0 auto;
+        }
+    
+        #detail_menu > ul > a{
+          position: relative;
+          float: left;
+          width: 225px;
+          height: 60px;
+          text-align: center;
+          line-height: 60px;
+          font-size: 1rem;
+          font-weight: 500;
+          text-decoration: none;
+          font-family: 'Montserrat';
+        }
+    
+          #detail_menu > ul > a:nth-child(1):after {
+            content: "";
+            display: block;
+            width: 60px;
+            margin-left: 82.5px;
+            margin-top: -3px;
+            border-bottom: 2px solid #313131;
+          }
+    
+          #detail_menu > ul a:hover {
+            font-weight: bold;
+            color: #1d1d1d;
+          }
+    
+          #detail_menu > ul a:hover:after {
+            content: "";
+            display: block;
+            width: 60px;
+            margin-left: 82.5px;
+            margin-top: -3px;
+            border-bottom: 2px solid #313131;
+          }
+    
+          #detail_menu > ul a:nth-child(1) {
+            font-weight: bold;
+          }
+
+
+      /* 상세페이지 이미지 */
+      #pro_detail_img {
+        position: relative;
+        clear: both;
+        width: 950px;
+        height: 16684px;
+        padding-top: 100px;
+      }
+
+      /* 정보 */
+      #info_all {
+        position: relative;
+        clear: both;
+        width: 748px;
+        height: 688px;
+        padding: 70px 50px;
+        margin: 0 auto;
+        margin-top: 80px;
+        border: 1px solid #616161cc;
+      }
+
+        /* 결제정보 */
+        #payment {
+          position: relative;
+          width: 748px;
+          height: 200px;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: space-between;
+        }
+
+          #payment > div:nth-child(1) {
+            position: relative;
+            clear: both;
+            width: 748px;
+            height: 30px;
+            line-height: 30px;
+            font-family: 'Montserrat';
+            font-size: 0.5rem;
+            font-weight: 600;
+          }
+
+          #payment > div:nth-child(2) {
+            position: relative;
+            clear: both;
+            width: 748px;
+            height: 160px;
+            line-height: 18px;
+            font-family: 'Pretendard-Regular';
+            font-size: 9px;
+            font-weight: 300;
+            color: #636363;
+          }
+
+        #delivery {
+          position: relative;
+          width: 748;
+          height: 170px;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: space-between;
+          margin-top: 50px;
+        }
+
+          #delivery > div:nth-child(1) {
+            position: relative;
+            clear: both;
+            width: 748;
+            height: 30px;
+            line-height: 30px;
+            font-family: 'Montserrat';
+            font-size: 0.5rem;
+            font-weight: 600;
+          }
+
+          #delivery > div:nth-child(2) {
+            position: relative;
+            clear: both;
+            width: 748;
+            height: 130px;
+            line-height: 18px;
+            font-family: 'Pretendard-Regular';
+            font-size: 9px;
+            font-weight: 300;
+            color: #636363;
+          }
+
+        #exchange {
+          position: relative;
+          width: 748;
+          height: 230px;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: space-between;
+          margin-top: 50px;
+        }
+
+          #exchange > div:nth-child(1) {
+            position: relative;
+            clear: both;
+            width: 748;
+            height: 30px;
+            line-height: 30px;
+            font-family: 'Montserrat';
+            font-size: 0.5rem;
+            font-weight: 600;
+          }
+
+          #exchange > div:nth-child(2) {
+            position: relative;
+            clear: both;
+            width: 748;
+            height: 190px;
+            line-height: 18px;
+            font-family: 'Pretendard-Regular';
+            font-size: 9px;
+            font-weight: 300;
+            color: #636363;
+          }
+
+      /* Q&A */
+      #question_all {
+        position: relative;
+        clear: both;
+        width: 950px;
+        height: 110px;
+        margin-top: 100px;
+      }  
+
+        #question_all > #quest {
+          position: relative;
+          clear: both;
+          width: 950px;
+          height: 40px;
+          display: flex;
+          flex-flow: row nowrap;
+        }
+
+          #quest > div:nth-child(1) {
+            position: relative;
+            float: left;
+            width: 690px;
+            height: 40px;
+            line-height: 48px;
+            font-family: 'Montserrat';
+            font-size: 0.5rem;
+            font-weight: 500;
+            color: #5a5a5a;
+          } 
+          
+          #quest > a > div {
+            position: relative;
+            float: left;
+            width: 118px;
+            height: 38px;
+            line-height: 38px;
+            font-family: 'Montserrat';
+            font-size: 0.5rem;
+            font-weight: 500;
+            text-align: center;
+            color: #5a5a5a;
+            border: 1px solid #5a5a5ad7;
+            margin-left: 10px;
+            transition: all 0.3s;
+          }
+
+            #quest > a > div:hover {
+            background-color: #ddd;
+            transition: all 0.3s;
+          }
+
+        #question_all > #post {
+          position: relative;
+          clear: both;
+          width: 948px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          margin-top: 15px;
+          font-size: 0.8rem;
+          border: 1px solid #5a5a5ad7;
+        }
+
+
+  /* 푸터 */
+  footer {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+  margin: 0 auto;
+  }
+
+  .footer_top_wrap {
+    position: relative;
+    clear: both;
+    width: 1440px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+    /* 위 푸터 */
+    .footer_top {
+      position: relative;
+      clear: both;
+      width: 1300px;
+      height: 200px;
+      margin: 0 auto;
+      padding: 0 70px;
+      text-align: center;
+      font-family: 'Montserrat';
+    }
+  
+      #footer_top_01 {
+        position: relative;
+        float: left;
+        width: 432px;
+        height: 200px;
+      }
+
+       #footer_top_01 p:nth-child(1) {
+        position: relative;
+        clear: both;
+        width: 432px;
+        height: 15px;
+        line-height: 15px;
+        margin-top: 45px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 20px;
+       } 
+
+       #footer_top_01 p:nth-child(2) {
+        position: relative;
+        clear: both;
+        width: 432px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 1.2rem;
+        font-weight: 700;
+       }
+
+       #footer_top_01 p:nth-child(3) {
+        position: relative;
+        clear: both;
+        width: 432px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: 500;
+        color: #525252;
+       }
+
+       #footer_top_01 p:nth-child(4) {
+        position: relative;
+        clear: both;
+        width: 432px;
+        height: 20px;
+        line-height: 20px;
+        font-weight: 500;
+        color: #525252;
+       }
+
+
+      #footer_top_02 {
+        position: relative;
+        float: left;
+        width: 431px;
+        height: 200px;
+        border-left: 1px solid #9e9e9ebb;
+        border-right: 1px solid #9e9e9ebb;
+      }
+
+        #footer_top_02 p:nth-child(1) {
+          position: relative;
+          clear: both;
+          width: 431px;
+          height: 15px;
+          line-height: 15px;
+          margin-top: 45px;
+          font-weight: 600;
+          color: #333;
+          margin-bottom: 20px;
+          } 
+
+        #footer_top_02 p:nth-child(2) {
+          position: relative;
+          clear: both;
+          width: 431px;
+          height: 30px;
+          line-height: 30px;
+          font-weight: 500;
+          color: #525252;
+        }
+
+        #footer_top_02 p:nth-child(3) {
+          position: relative;
+          clear: both;
+          width: 431px;
+          height: 30px;
+          line-height: 30px;
+          font-weight: 500;
+          color: #525252;
+        }
+
+      #footer_top_03 {
+        position: relative;
+        float: left;
+        width: 431px;
+        height: 200px;
+      }
+
+        #footer_top_03 p:nth-child(1) {
+          position: relative;
+          clear: both;
+          width: 433px;
+          height: 15px;
+          line-height: 15px;
+          margin-top: 45px;
+          font-weight: 600;
+          color: #333;
+          margin-bottom: 25px;
+        }
+
+        #footer_top_03 ul {
+          position: relative;
+          clear: both;
+          display: block;
+          width: 330px;
+          height: 50px;
+          padding-left: 103px;
+        }
+
+          #footer_top_03 ul li {
+            position: relative;
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin: 0 3px;
+          }
+
+          #footer_top_03 ul li a {
+            position: relative;
+            clear: both;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            display: block;
+            text-align: center;
+            background: #f5f5f5;
+          }
+
+            #footer_top_03 ul li a img{
+              margin: 15px 0;
+            }
+    
+  /* 아래 푸터 */
+  .footer_btm_wrap {
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+  }
+
+    .footer_bottom {
+      position: relative;
+      clear: both;
+      width: 1440px;
+      height: 275px;
+      margin: 0 auto;
+      padding-top: 25px;
+    }
+
+      #footer_btm_about {
+        position: relative;
+        clear: both;
+        width: 1440px;
+        height: 100px;
+        line-height: 100px;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+      }
+
+        #footer_btm_about p {
+          position: relative;
+          float: left;
+          margin: 0 20px;
+          font-size: 1.1rem;
+          font-weight: 500;
+          font-family: 'Montserrat';
+        }
+
+      #footer_btm_info {
+        position: relative;
+        clear: both;
+        width: 1440px;
+        height: 150px;
+        text-align: center;
+        line-height: 26px;
+        color: #5a5a5a;
+      }
